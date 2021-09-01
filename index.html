@@ -5,53 +5,66 @@
     <title>Bomb Bites</title>
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/home.css">
-    <!-- <script type="text/javascript"></script> -->
+    <script src="./js/slideshow.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Bomb Bites</h1>
+      <nav>
+        <!-- nav sits centered directly below h1 -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
-    <nav>
-      <!-- nav sits centered directly below header -->
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="recipes.html">Recipes</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
     <div class="bio-container">
       <div class="column" id="bio-photo"></div>
       <div class="column">
-        <p>Bomb Bites is a collection of recipes developed in the mind of Bridget Smith, a Colorado chef with a background In nutrition focused on sustainability, scratch made bites and fueling the body.</p>
+        <p>Bomb Bites is a collection of recipes developed in the mind of Bridget Smith, a Colorado chef with a background in nutrition focused on sustainability, scratch made bites and fueling the body.</p>
       </div>
     </div>
+    <h3>Take a Bite!</h3>
+
+    <!-- Here's how I built my slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
     <div class="slideshow-container">
-      <h3>Take a Bite!</h3>
-      <div class="slide">
+      <div class="slide fade">
         <h4>Teriyaki Tofu Bao Buns</h4>
         <img src="./media/bao.jpeg" alt="A bao bun taco with crispy teriyaki tofu, carrots, cucumbers, spicy red peppers, and sriracha mayo.">
-        <p>These buns were an absolute home run. This is easily one of my favorite dishes I have ever made, and quite an enjoyable process as well! The light and pillowy buns came together with a few simple pantry ingredients. In this post I will walk you through the process of making the buns from scratch.</p>
+        <p class="caption">These buns were an absolute home run. This is easily one of my favorite dishes I have ever made, and quite an enjoyable process as well! The light and pillowy buns came together with a few simple pantry ingredients. In this post I will walk you through the process of making the buns from scratch.</p>
       </div>
-      <div class="slide">
+      <div class="slide fade">
         <h4>Falafel</h4>
         <img src="./media/falafel.jpeg" alt="Falafel with pita bread, hummus, and cucumber salad on a plate.">
-        <p>I have not made falafel very often because it seemed to turn out dense and dry, but I discovered a technique that I had not yet tried that I was eager to it test out! This technique includes adding whipped egg whites to the batter to produce a lighter, airy texture. Although the batter seemed wetter than we expected, we were thrilled with the outcome. These little falafels were light, crisp and heavenly. Join me this week in a Mediterranean feast!</p>
+        <p class="caption">I have not made falafel very often because it seemed to turn out dense and dry, but I discovered a technique that I had not yet tried that I was eager to it test out! This technique includes adding whipped egg whites to the batter to produce a lighter, airy texture. Although the batter seemed wetter than we expected, we were thrilled with the outcome. These little falafels were light, crisp and heavenly. Join me this week in a Mediterranean feast!</p>
       </div>
-      <div class="slide">
+      <div class="slide fade">
         <h4>Green Chile Guacamole</h4>
         <img src="./media/guac.jpeg" alt="Homemade guacamole in a solid black mortar.">
-        <p>This dip is fully loaded, so if you are a guac purist, this is not the recipe for you. But if you’re looking to kick it up a notch with your guac, I think you’ll want to give this one a spin. The base of the recipe is my go to guac, but I kicked it up a notch this time with some extra flair. The holiday weekend is just around the corner and this is could be your perfect pool party pleaser!</p>
+        <p class="caption">This dip is fully loaded, so if you are a guac purist, this is not the recipe for you. But if you’re looking to kick it up a notch with your guac, I think you’ll want to give this one a spin. The base of the recipe is my go to guac, but I kicked it up a notch this time with some extra flair. The holiday weekend is just around the corner and this is could be your perfect pool party pleaser!</p>
       </div>
-      <div class="slide">
+      <div class="slide fade">
         <h4>Detroit Style Pizza</h4>
         <img src="./media/pizza.jpeg" alt="Close up view of crispy cheese on the outside crust of Detroit style pizza.">
-        <p>As my parting goodbye to the children’s museum, I made 18 pizzas for the staff to thank them for crushing this crazy year. A coworker asked if I could teach her how to make pizza before I left so we made everything from scratch. This is my grandpas dough recipe and my uncles sauce recipe.</p>
+        <p class="caption">As my parting goodbye to the children’s museum, I made 18 pizzas for the staff to thank them for crushing this crazy year. A coworker asked if I could teach her how to make pizza before I left so we made everything from scratch. This is my grandpas dough recipe and my uncles sauce recipe.</p>
       </div>
-      <div class="slide">
+      <div class="slide fade">
         <h4>Kale Caesar Salad</h4>
         <img src="./media/salad.jpeg" alt="Birds eye view of caesar salad with an avocado flower in the center.">
-        <p>To be totally transparent, I am not the type of chef who measures anything. That being said, the dressing recipe is a rough estimate of what I typically do. As always, adjust recipes based on your own taste buds. This is my go to salad dressing (and my most requested among friends) so please enjoy!</p>
+        <p class="caption">To be totally transparent, I am not the type of chef who measures anything. That being said, the dressing recipe is a rough estimate of what I typically do. As always, adjust recipes based on your own taste buds. This is my go to salad dressing (and my most requested among friends) so please enjoy!</p>
       </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div id="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
   </body>
   <footer>
