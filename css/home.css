@@ -1,0 +1,21 @@
+.bio-container {
+  width: 100%;
+  display: flex;
+  margin: 5rem 0;
+}
+
+.column {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10rem;
+}
+
+#bio-photo {
+  background-image: url('../media/profile.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,81 @@
+/* Font import */
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DancingScript";
+  src: url("./../fonts/dancing-script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Amatic";
+  src: url("./../fonts/AmaticSC-Regular.ttf") format("truetype");
+}
+
+/* ---------------------- DEFAULT STYLES ---------------------- */
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: DancingScript;
+  font-size: 8rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: Georgia;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+header {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------------------- NAVIGATION BAR ---------------------- */
+nav {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+/* ---------------------- FOOTER ---------------------- */
